@@ -1,0 +1,64 @@
+<!--index.wxml-->
+<view class="container">
+  <view class='image-container'>
+    <canvas style="width:{{canvasWidth}}px; height: {{canvasHeight}}px;" canvas-id="imageCanvas"></canvas>
+  </view>
+  <scroll-view scroll-x class='image-scroll'>
+    <view class='imgCover-container'>
+      <view class='imgCover-content'>
+        <view class='imgCover-item'>
+          <image style='width:200rpx; height:200rpx' src='../../image/images.jpg'></image>
+        </view>
+      </view>
+      <view class='imgCover-content'>
+        <view class='imgCover-item'>
+          <image style='width:200rpx; height:200rpx' src='../../image/images.jpg'></image>
+        </view>
+      </view>
+      <view class='imgCover-content'>
+        <view class='imgCover-item'>
+          <image style='width:200rpx; height:200rpx' src='../../image/images.jpg'></image>
+        </view>
+      </view>
+      <view class='imgCover-content'>
+        <view class='imgCover-item'>
+          <image style='width:200rpx; height:200rpx' src='../../image/images.jpg'></image>
+        </view>
+      </view>
+      <view class='imgCover-content'>
+        <view class='imgCover-item'>
+          <image style='width:200rpx; height:200rpx' src='../../image/images.jpg'></image>
+        </view>
+      </view>
+      <view class='imgCover-content'>
+        <view class='imgCover-item'>
+          <image style='width:200rpx; height:200rpx' src='../../image/images.jpg'></image>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class='image-btn-wapper'>
+    <button class='image-btn' bindtap='clearImg'>清空图片</button>
+    <button class='image-btn' bindtap='addImg'>添加图片</button>
+    <button class='image-btn' bindtap='batchImg'>保存图片</button>
+  </view>
+  <view class='image-check-wapper'>
+    <view class='image-check-item'>
+      <view>水印文字：</view>
+      <view><input type='text' placeholder='这是数字额'></input></view>
+    </view>
+    <view class='image-check-item'>
+      <view>水印颜色：</view>
+      <view class='img-check-color'>
+        <span class='check-circle'></span>
+        <span class='check-circle'></span>
+        <span class='check-circle'></span>
+        <span class='check-circle'></span>
+      </view>
+    </view>
+    <view class='image-check-item'>
+      <view>水印位置：</view>
+      <view><input type='text' placeholder='这是数字额'></input></view>
+    </view>
+  </view>
+</view>
